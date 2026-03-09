@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Tesla Auth</title></head>
+<body>
+<h1>Authorization Code:</h1>
+<p id="code" style="font-size:24px;font-weight:bold;color:blue"></p>
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById('code').textContent = params.get('code') || 'No code found';
+</script>
+</body>
+</html>
